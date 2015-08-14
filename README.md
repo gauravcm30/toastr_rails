@@ -25,6 +25,26 @@ You can put this in your layout/application.html file if you want to chach flash
 
     = render 'toastr_rails/flash'
 
+use toastr to display a toast for info, success, warning or error
+
+```ruby
+   // Display an info toast with no title
+   toastr.info('Are you the 6 fingered man?')
+```
+
+Other options -> 
+
+```ruby
+// Display a warning toast, with no title
+toastr.warning('My name is Inigo Montoya. You Killed my father, prepare to die!')
+
+// Display a success toast, with a title
+toastr.success('Have fun storming the castle!', 'Miracle Max Says')
+
+// Display an error toast, with a title
+toastr.error('I do not think that word means what you tink it means.', 'Inconceivable!')
+```
+
 ## Defaults:
 
     // javascript
